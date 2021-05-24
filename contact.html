@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section id="contact" class="contact section">
+        <div class="contact-inner inner">
+            <h2 class="contact-head section-title">Contact</h2>
+
+            <div class="contact__form">
+                <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScdN7qTXYSQtqf37cf73MTKG_263U48af4Hb4t81pfyF0Egcw/formResponse" class="contact-form">
+                    <dl class="contact-form__dl">
+                        <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-name" class="is-required">お名前</label></dt>
+                            <dd class="contact-form__input"><input id="your-name" type="text" placeholder="山田 太郎" name="entry.805246480"></dd>
+                        </div>
+                        <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-name__kana" class="is-required">フリガナ</label></dt>
+                            <dd class="contact-form__input"><input id="your-name__kana" type="text-kana" placeholder="ヤマダ タロウ" name="entry.919692518"></dd>
+                        </div>
+                        <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-email" class="is-required">メールアドレス</label></dt>
+                            <dd class="contact-form__input"><input id="your-email" type="email" placeholder="text@example.com" name="emailAddress"></dd>
+                        </div>
+                        <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-email">法人/個人の選択</label></dt>
+                            <dd class="contact-form__input contact-radio">
+                                <label><input type="radio" checked name="entry.750133590" value="法人"><span>法人</span></label>
+                                <label><input type="radio" name="entry.750133590" value="個人"><span>個人</span></label>
+                            </dd>
+                        </div>
+                        <!-- <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-kind">お問い合わせ種別</label></dt>
+                            <dd class="contact-form__input">
+                                <select name="" id="your-kind">
+                                    <option value="">セレクト1</option>
+                                    <option value="">セレクト2</option>
+                                    <option value="">セレクト3</option>
+                                </select>
+                            </dd>
+                        </div> -->
+                        <div class="contact-form__row">
+                            <dt class="contact-form__label"><label for="your-message" class="is-required">お問い合わせ内容</label></dt>
+                            <dd class="contact-form__input">
+                                <textarea name="entry.1900137613" id="your-message" placeholder="お問い合わせを入力してください"></textarea>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="contact-form__check">
+                        <label><input type="checkbox" name="entry.729393355"><span><a href="">プライバシーポリシー</a>に合意する</span></label>
+                    </div>
+
+                    <div class="contact-form__button">
+                        <button id="js-submit" type="button" value="送信" disabled>送信する</button>
+                    </div>
+                </form>
+
+                <div id="js-success" class="contact-message">
+                    <p>送信完了しました。ありがとうございました。</p>
+                </div>
+                <div id="js-error" class="contact-message -error">
+                    <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
