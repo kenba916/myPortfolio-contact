@@ -54,6 +54,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: #001f3f;
+    background: #EFEFEF;
+
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -490,6 +492,14 @@ contact
 
 .contact-message.-error {
   color: #f00;
+}
+
+.contact-top {
+    width: 900px;
+    max-width: 100%;
+    text-align: right;
+    margin-top: 60px;
+    padding-right: 20px;
 }
 
 .banner-title {
